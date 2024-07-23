@@ -1,1 +1,18 @@
+name: Github Environments
+
+on:
+    workflow_dispatch: 
+
+jobs:
+    deployment:
+        runs-on: ubuntu-latest
+
+        environment:
+            name: prod trial
+            url: https://github.com
+
+        steps:
+            - name: "Create a local file"
+              run: echo "Hey this is just to test how artifacts work! secret:${{ secrets.prod_trial_secret }}"
+                
 
