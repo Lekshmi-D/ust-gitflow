@@ -15,6 +15,7 @@ jobs:
               with:
                 name: file
                 path: file.txt
+                retention-days: 10  #by default it is for 90 days, takes space so better mention the days.
 
     job_2:
         name: Download Artifact
