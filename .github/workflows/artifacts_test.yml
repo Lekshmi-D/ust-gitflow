@@ -9,7 +9,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Create a local file"
-              run: echo "Hey this is just to test how artifacts work!"
+              run: echo "Hey this is just to test how artifacts work!" > file.txt  #do add this
 
             - uses: actions/upload-artifact@v2
               with:
