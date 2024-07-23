@@ -25,9 +25,9 @@ jobs:
         
         steps:
             - id: step1
-              run: echo"name=test::value1"
+              run: echo"::setname=test::value1"
             - id: step2
-              run: echo"name=test::value2"
+              run: echo"::setname=test::value2"
     job2:
         runs-on: ubuntu-latest
         needs: job1
