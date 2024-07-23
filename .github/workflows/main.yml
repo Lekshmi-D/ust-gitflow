@@ -7,6 +7,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  #Allows to run the workflow manually from the actions tab
   workflow_dispatch: 
 
 #A workfliw consistes of jobs, that can run sequentially or in parallel
