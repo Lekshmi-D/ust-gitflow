@@ -24,7 +24,7 @@ jobs:
 
       #Runs a single command using runners shell
     - name: Run a one line script
-      uses: echo Hello, World
+      run: echo Hello, World
       
       #Runs a set of commands using runners shell
     - name: Run multi line script
